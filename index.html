@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+        extend: {
+            fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            },
+        }
+        }
+    }
+    </script>
+</head>
+<body>
+    <main>
+        <section class="container mx-auto mt-20">
+            <div class="flex justify-center">
+                <div class="bg-gray-800 flex-col p-8">
+                    <h1 class="text-white text-center text-3xl font-bold mb-12">Please Contact me</h1>
+                    <div class="flex-col mx-auto mb-3">
+                        <p class="text-white mb-2">Name</p>
+                        <input id="name-input" class="px-3 py-2 mr-7" type="text" placeholder="Enter Name">
+                        <button id="delete-name-btn" type="button" class="mr-7 inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Delete Name</button>
+                        <button id="send-name-btn" type="button" class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Send Name</button>
+                    </div>
+                    <div class="flex-col mx-auto mb-3">
+                        <p class="text-white mb-2">Email</p>
+                        <input id="email-input" class="px-3 py-2 mr-7" type="email" name="" id="" placeholder="Enter Email">
+                        <button id="delete-email-btn" type="button" class="mr-7 inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Delete Email</button>
+                        <button id="send-email-btn" type="button" class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Send Email</button>
+                    </div>
+                    <div class="flex-col mx-auto items-center">
+                        <p class="text-white mb-2">Message</p>
+                        <input id="text-input" class="py-3 px-3 mr-7" type="text" placeholder="Your Message">
+                        <button id="delete-text-btn" type="button" class="mr-7 inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Delete Text</button>
+                        <button id="send-text-btn" type="button" class="inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Send Text</button>
+                    </div>
+                    <div class="mt-7">
+                        <button id="send-btn" type="button" class="px-12 mr-7 inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Send</button>
+                        <button id="reset-btn" type="button" class="px-12 inline-block px-6 py-2.5 bg-gray-200 text-gray-700 font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-gray-300 hover:shadow-lg focus:bg-gray-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-400 active:shadow-lg transition duration-150 ease-in-out">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto mt-8">
+            <div class="flex justify-center">
+                <div id="display-data" class="bg-gray-800 w-80 p-5">
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="api.js"></script>
+</body>
+</html>
